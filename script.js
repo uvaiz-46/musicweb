@@ -116,4 +116,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateSongInfo();
     attachTimeUpdateEvent();
+
+    const cursor = document.getElementById("cursor");
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    });
+
+    document.addEventListener("mouseleave", () => {
+        cursor.style.display = "none";
+    });
+
+    document.addEventListener("mouseenter", () => {
+        cursor.style.display = "block";
+    });
+
 });
