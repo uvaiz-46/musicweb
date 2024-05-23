@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <h1>Loading...</h1>
+        <div class="loader"></div>
+    </div>
+    
+    <div class="main" style="display: none;">
+        <div class="home">
+            <div class="music_play">
+                <div id="image-container">
+                    <img id="song-image" src="" alt="Song Image" />
+                </div>
+                <h2 class="song-name">Loading...</h2>
+                <div class="btnn">
+                    <button id="prev"><i class="fas fa-backward"></i></button>
+                    <button id="pla"><i id="play-push" class="fas fa-play"></i></button>
+                    <button id="forw"><i class="fas fa-forward"></i></button>
+                </div>
+                <div class="but">
+                    <span id="currentTime" class="nun">0:00</span>
+                    <input type="range" id="timeSlider" min="0" max="100" value="0">
+                    <span id="durationTime" class="nun">0:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
